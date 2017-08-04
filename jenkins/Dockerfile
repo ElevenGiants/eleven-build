@@ -5,7 +5,7 @@ ARG docker_version=17.06.0
 ARG docker_gid=999
 
 ENV JAVA_OPTS="-Xmx512m"
-ENV JENKINS_OPTS="--logfile=/var/log/jenkins/jenkins.log --webroot=/var/cache/jenkins/war"
+ENV JENKINS_OPTS="--webroot=/var/cache/jenkins/war"
 
 # make sure war cache directory exists (with the right permissions)
 USER root
@@ -36,4 +36,5 @@ RUN /usr/local/bin/install-plugins.sh \
 	blueocean \
 	docker-workflow \
 	git \
+	slack \
 	workflow-aggregator
