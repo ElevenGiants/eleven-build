@@ -36,5 +36,7 @@ RUN /usr/local/bin/install-plugins.sh \
 	blueocean \
 	docker-workflow \
 	git \
+	github-oauth \
+	matrix-auth \
 	slack \
 	workflow-aggregator
